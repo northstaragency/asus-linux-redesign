@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete catalog of ASUS laptop models, tools, playbooks, and resources for Linux.">
+    <title>Catalog - Everything for ASUS laptops on Linux</title>
+    <link rel="stylesheet" href="style/catelog-styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <span class="logo-accent">ROG</span> Control Center
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="../rog-product-hub.html">Product</a></li>
+                <li><a href="../rog-install-complete.html">Install</a></li>
+                <li><a href="../rog-playbooks-page.html">Playbooks</a></li>
+                <li><a href="../rog-community-page.html">Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main>
+            <section class="hero">
+                <h1>Catalog — Everything for ASUS laptops on Linux</h1>
+                <p class="hero-subtext">Browse models, tools, playbooks, and community resources.</p>
+
+                <div class="search-box">
+                    <form class="search-form" action="/search" method="get">
+                        <input type="text" name="q" class="search-input" placeholder="Search models, playbooks, or docs..." aria-label="Search">
+                        <button type="submit" class="search-btn">Search</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="section" id="models">
+                <h2>Supported Models</h2>
+                <p class="section-meta">Updated October 2025 • 127 models verified</p>
+
+                <div class="series-grid">
+                    <div class="series-card">
+                        <div class="series-header">
+                            <span class="series-icon">🎮</span>
+                            <h3 class="series-name">ROG</h3>
+                        </div>
+                        <p class="series-count">42 models</p>
+                        <ul class="series-models">
+                            <li>Zephyrus G14 (2024)</li>
+                            <li>Zephyrus G15 (2024)</li>
+                            <li>Flow X13 (2023)</li>
+                        </ul>
+                        <a href="#rog-models" class="series-link">View all ROG models →</a>
+                    </div>
+
+                    <div class="series-card">
+                        <div class="series-header">
+                            <span class="series-icon">⚔️</span>
+                            <h3 class="series-name">TUF</h3>
+                        </div>
+                        <p class="series-count">28 models</p>
+                        <ul class="series-models">
+                            <li>TUF Gaming A15 (2024)</li>
+                            <li>TUF Gaming F15 (2023)</li>
+                            <li>TUF Dash F15 (2023)</li>
+                        </ul>
+                        <a href="#tuf-models" class="series-link">View all TUF models →</a>
+                    </div>
+
+                    <div class="series-card">
+                        <div class="series-header">
+                            <span class="series-icon">💼</span>
+                            <h3 class="series-name">Zenbook</h3>
+                        </div>
+                        <p class="series-count">31 models</p>
+                        <ul class="series-models">
+                            <li>Zenbook 14 OLED (2024)</li>
+                            <li>Zenbook Pro 15 (2023)</li>
+                            <li>Zenbook S13 (2023)</li>
+                        </ul>
+                        <a href="#zenbook-models" class="series-link">View all Zenbook models →</a>
+                    </div>
+
+                    <div class="series-card">
+                        <div class="series-header">
+                            <span class="series-icon">🎨</span>
+                            <h3 class="series-name">ProArt</h3>
+                        </div>
+                        <p class="series-count">15 models</p>
+                        <ul class="series-models">
+                            <li>ProArt Studiobook 16 (2024)</li>
+                            <li>ProArt Studiobook Pro (2023)</li>
+                            <li>ProArt 13 (2023)</li>
+                        </ul>
+                        <a href="#proart-models" class="series-link">View all ProArt models →</a>
+                    </div>
+
+                    <div class="series-card">
+                        <div class="series-header">
+                            <span class="series-icon">📱</span>
+                            <h3 class="series-name">VivoBook</h3>
+                        </div>
+                        <p class="series-count">11 models</p>
+                        <ul class="series-models">
+                            <li>VivoBook Pro 15 (2023)</li>
+                            <li>VivoBook S15 (2023)</li>
+                            <li>VivoBook 14 (2022)</li>
+                        </ul>
+                        <a href="#vivobook-models" class="series-link">View all VivoBook models →</a>
+                    </div>
+                </div>
+
+                <div class="report-link">
+                    <p>Don't see your model? <a href="#report-model">Report it →</a></p>
+                </div>
+            </section>
+
+            <section class="section" id="tools">
+                <h2>Tools & Products</h2>
+
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-label">GUI Application</div>
+                        <h3 class="tool-title">ROG Control Center</h3>
+                        <p class="tool-description">Graphical interface for profiles, GPU switching, battery care, and fan controls.</p>
+                        <p class="tool-for"><strong>For:</strong> Everyone, especially new users</p>
+                        <div class="tool-links">
+                            <a href="#install">Get it</a>
+                            <a href="#rog-control-center">Learn more</a>
+                            <a href="#docs">Docs</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-label">CLI Daemon</div>
+                        <h3 class="tool-title">asusctl</h3>
+                        <p class="tool-description">Command-line daemon for fans, LEDs, battery caps, and device controls.</p>
+                        <p class="tool-for"><strong>For:</strong> Power users, scripters, servers</p>
+                        <div class="tool-links">
+                            <a href="#install">Install</a>
+                            <a href="#asusctl">Learn more</a>
+                            <a href="#docs">Docs</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-label">Graphics Switching</div>
+                        <h3 class="tool-title">supergfxctl</h3>
+                        <p class="tool-description">GPU mode switching CLI for iGPU, Hybrid, and dGPU with MUX support.</p>
+                        <p class="tool-for"><strong>For:</strong> Users managing GPU modes</p>
+                        <div class="tool-links">
+                            <a href="#install">Install</a>
+                            <a href="#supergfxctl">Learn more</a>
+                            <a href="#docs">Docs</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="playbooks">
+                <h2>Playbooks</h2>
+                <p class="section-meta">23 guides • Step-by-step instructions</p>
+
+                <div class="playbook-categories">
+                    <div class="playbook-category">
+                        <div class="category-header">
+                            <h3 class="category-name">Performance & Thermals</h3>
+                            <span class="category-count">6 playbooks</span>
+                        </div>
+                        <div class="playbook-list">
+                            <div class="playbook-item">
+                                <div class="playbook-info">
+                                    <div class="playbook-title"><a href="#playbook-quiet-fans">Quiet fans at night</a></div>
+                                    <div class="playbook-badges">
+                                        <span class="badge badge-time">1 min</span>
+                                        <span class="badge badge-level">Beginner</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="playbook-item">
+                                <div class="playbook-info">
+                                    <div class="playbook-title"><a href="#playbook-performance">Performance mode for gaming</a></div>
+                                    <div class="playbook-badges">
+                                        <span class="badge badge-time">1 min</span>
+                                        <span class="badge badge-level">Beginner</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="playbook-item">
+                                <div class="playbook-info">
+                                    <div class="playbook-title"><a href="#playbook-fan-curves">Custom fan curves</a></div>
+                                    <div class="playbook-badges">
+                                        <span class="badge badge-time">3 min</span>
+                                        <span class="badge badge-level">Beginner</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="playbook-item">
+                                <div class="playbook-info">
+                                    <div class="playbook-title"><a href="#playbook-reset">Reset everything safely</a></div>
+                                    <div class="playbook-badges">
+                                        <span class="badge badge-time">30 sec</span>
+                                        <span class="badge badge-level">Beginner</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="#playbooks-index" class="series-link">View all playbooks →</a>
+                </div>
+            </section>
+
+            <section class="section" id="documentation">
+                <h2>Documentation</h2>
+
+                <div class="docs-grid">
+                    <div class="docs-category">
+                        <h3>Getting Started</h3>
+                        <ul class="docs-list">
+                            <li>
+                                <a href="#doc-install" class="doc-link">Install Guide</a>
+                                <p class="doc-description">Step-by-step installation for all major distros</p>
+                            </li>
+                            <li>
+                                <a href="#doc-first-run" class="doc-link">First Run</a>
+                                <p class="doc-description">What to do after installing Control Center</p>
+                            </li>
+                            <li>
+                                <a href="#doc-glossary" class="doc-link">Glossary</a>
+                                <p class="doc-description">Common terms: iGPU, MUX, TDP, profiles explained</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="docs-category">
+                        <h3>Advanced</h3>
+                        <ul class="docs-list">
+                            <li>
+                                <a href="#doc-per-app" class="doc-link">Per-app Profiles</a>
+                                <p class="doc-description">Automatically switch GPU and performance per application</p>
+                            </li>
+                            <li>
+                                <a href="#doc-fan-curves" class="doc-link">Fan Curves</a>
+                                <p class="doc-description">Create custom temperature-based fan curves</p>
+                            </li>
+                            <li>
+                                <a href="#doc-oled" class="doc-link">OLED Care</a>
+                                <p class="doc-description">Pixel shift and refresh scheduling for OLED panels</p>
+                            </li>
+                            <li>
+                                <a href="#doc-scripting" class="doc-link">CLI Scripting</a>
+                                <p class="doc-description">Automate hardware control with shell scripts</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="docs-category">
+                        <h3>Troubleshooting</h3>
+                        <ul class="docs-list">
+                            <li>
+                                <a href="#doc-errors" class="doc-link">Common Errors</a>
+                                <p class="doc-description">Fixes for typical installation and runtime issues</p>
+                            </li>
+                            <li>
+                                <a href="#doc-logs" class="doc-link">Reading Logs</a>
+                                <p class="doc-description">Where to find logs and how to interpret them</p>
+                            </li>
+                            <li>
+                                <a href="#doc-secure-boot" class="doc-link">Secure Boot</a>
+                                <p class="doc-description">Configure for dual-boot and signed modules</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="docs-category">
+                        <h3>Contributing</h3>
+                        <ul class="docs-list">
+                            <li>
+                                <a href="#doc-contribute-code" class="doc-link">Code Contributions</a>
+                                <p class="doc-description">How to submit pull requests and follow guidelines</p>
+                            </li>
+                            <li>
+                                <a href="#doc-contribute-docs" class="doc-link">Documentation</a>
+                                <p class="doc-description">Help improve guides and fix errors</p>
+                            </li>
+                            <li>
+                                <a href="#doc-contribute-models" class="doc-link">Model Reports</a>
+                                <p class="doc-description">Add your laptop to the supported models list</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="community">
+                <h2>Community & Support</h2>
+
+                <div class="community-grid">
+                    <div class="community-card">
+                        <div class="community-icon">💬</div>
+                        <h3>Discord</h3>
+                        <p>Chat and quick help</p>
+                        <a href="https://discord.gg/example">Join Discord →</a>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-icon">🐙</div>
+                        <h3>GitHub</h3>
+                        <p>Issues, PRs, and source code</p>
+                        <a href="https://github.com/asus-linux">View repos →</a>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-icon">📊</div>
+                        <h3>Status Page</h3>
+                        <p>Service availability</p>
+                        <a href="#status">Check status →</a>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-icon">📋</div>
+                        <h3>Code of Conduct</h3>
+                        <p>Community guidelines</p>
+                        <a href="#conduct">Read guidelines →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="legal">
+                <div class="legal-section">
+                    <h2>Legal & Transparency</h2>
+                    <div class="legal-grid">
+                        <div class="legal-item">
+                            <a href="#privacy">Privacy Policy</a>
+                        </div>
+                        <div class="legal-item">
+                            <a href="#trademarks">Trademarks</a>
+                        </div>
+                        <div class="legal-item">
+                            <a href="#license">Licenses (GPL-3.0)</a>
+                        </div>
+                        <div class="legal-item">
+                            <a href="#changelog">Changelog</a>
+                        </div>
+                        <div class="legal-item">
+                            <a href="#roadmap">Roadmap</a>
+                        </div>
+                        <div class="legal-item">
+                            <a href="#non-affiliation">Non-affiliation Notice</a>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1.5rem;">
+                        ROG Control Center is not affiliated with ASUS. All trademarks are property of their respective owners.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#install">Install Control Center</a></li>
+                    <li><a href="#models">Browse Models</a></li>
+                    <li><a href="#playbooks">View Playbooks</a></li>
+                    <li><a href="#community">Join Community</a></li>
+                </ul>
+            </div>
+
+            <div class="quick-links">
+                <h3>Top Playbooks</h3>
+                <ul>
+                    <li><a href="#playbook-gpu-switch">Switch to iGPU</a></li>
+                    <li><a href="#playbook-battery-cap">80% Battery Cap</a></li>
+                    <li><a href="#playbook-quiet-fans">Quiet Fans</a></li>
+                    <li><a href="#playbook-audio-fix">Fix No Sound</a></li>
+                </ul>
+            </div>
+
+            <div class="quick-links">
+                <h3>Need Help?</h3>
+                <ul>
+                    <li><a href="https://discord.gg/example">Discord Support</a></li>
+                    <li><a href="https://github.com/asus-linux/issues">Report Issue</a></li>
+                    <li><a href="#docs">Documentation</a></li>
+                    <li><a href="#status">System Status</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>ROG Control Center for Linux • Open source hardware control for ASUS ROG laptops</p>
+            <p style="margin-top: 0.5rem;">Licensed under GPL-3.0 • Community-driven development</p>
+        </div>
+    </footer>
+</body>
+</html>
