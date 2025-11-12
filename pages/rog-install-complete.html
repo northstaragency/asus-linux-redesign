@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Install ROG Control Center</title>
-    <link rel="stylesheet" href="../Styles/install-styles.css">
+    <link rel="stylesheet" href="../styles/install-styles.css">
 </head>
 
 <body>
@@ -146,221 +146,228 @@
                                     <div class="expected-text">Your system updated with power-profiles-daemon
                                         successfully</div>
                                 </div>
-                                
+
 
                             </div>
                             <div class="step-block">
-                                    <span class="step-indicator">Step 5 of 6</span>
-                                    <h3 class="step-title">supergfxctl</h3>
-                                    <p class="step-description"> Controls you GPU, <strong>Note: </strong>only needed if you have DGPU</p>
-                                    <div class="command-block">
-                                        <div class="command-label">Run this command:</div>
-                                        <div class="command-code"> sudo pacman -S supergfxctl
-                                        </div>
-                                        <button class="copy-btn"
-                                            onclick="copyCommand(this, ' sudo pacman -S supergfxctl')">Copy</button>
+                                <span class="step-indicator">Step 5 of 6</span>
+                                <h3 class="step-title">supergfxctl</h3>
+                                <p class="step-description"> Controls you GPU, <strong>Note: </strong>only needed if you
+                                    have DGPU</p>
+                                <div class="command-block">
+                                    <div class="command-label">Run this command:</div>
+                                    <div class="command-code"> sudo pacman -S supergfxctl
                                     </div>
-                                    <div class="step-description">Then</div>
-                                    <div class="command-block">
-                                        <div class="command-label">Run this command:</div>
-                                        <div class="command-code"> systemctl enable --now supergfxd
-                                        </div>
-                                        <button class="copy-btn"
-                                            onclick="copyCommand(this, ' systemctl enable --now supergfxd')">Copy</button>
-                                    </div>
-                                    <div class="expected-output">
-                                        <div class="expected-label">Expected output</div>
-                                        <div class="expected-text">Now you can control you GPU behaviour</div>
-                                    </div>
+                                    <button class="copy-btn"
+                                        onclick="copyCommand(this, ' sudo pacman -S supergfxctl')">Copy</button>
                                 </div>
-                                <div class="step-block">
-                                    <span class="step-indicator">Step 6 of 6</span>
-                                    <h3 class="step-title">ROG Control Center</h3>
-                                    <p class="step-description">Now it's time to get you GUI control center</p>
-                                    <div class="command-block">
-                                        <div class="command-label">Run this command:</div>
-                                        <div class="command-code"> sudo pacman -S rog-control-center
-                                        </div>
-                                        <button class="copy-btn"
-                                            onclick="copyCommand(this, ' sudo pacman -S rog-control-center')">Copy</button>
+                                <div class="step-description">Then</div>
+                                <div class="command-block">
+                                    <div class="command-label">Run this command:</div>
+                                    <div class="command-code"> systemctl enable --now supergfxd
                                     </div>
-                                    <div class="expected-output">
-                                        <div class="expected-label">Expected output</div>
-                                        <div class="expected-text">Now your system is ready to use</div>
-                                    </div>
+                                    <button class="copy-btn"
+                                        onclick="copyCommand(this, ' systemctl enable --now supergfxd')">Copy</button>
                                 </div>
-                                <div class="step-block">
-                                    <span class="step-indicator">Step 7 of 6</span>
-                                    <h3 class="step-title">Custom Kernel</h3>
-                                    <p class="step-description"><strong>Note: </strong>not everyone requires Custom Kernel, but often require by newer devices</p>
-                                    <div class="command-block">
-                                        <div class="command-label">Run this command:</div>
-                                        <div class="command-code"> pacman -Sy linux-g14 linux-g14-headers
+                                <div class="expected-output">
+                                    <div class="expected-label">Expected output</div>
+                                    <div class="expected-text">Now you can control you GPU behaviour</div>
+                                </div>
+                            </div>
+                            <div class="step-block">
+                                <span class="step-indicator">Step 6 of 6</span>
+                                <h3 class="step-title">ROG Control Center</h3>
+                                <p class="step-description">Now it's time to get you GUI control center</p>
+                                <div class="command-block">
+                                    <div class="command-label">Run this command:</div>
+                                    <div class="command-code"> sudo pacman -S rog-control-center
+                                    </div>
+                                    <button class="copy-btn"
+                                        onclick="copyCommand(this, ' sudo pacman -S rog-control-center')">Copy</button>
+                                </div>
+                                <div class="expected-output">
+                                    <div class="expected-label">Expected output</div>
+                                    <div class="expected-text">Now your system is ready to use</div>
+                                </div>
+                            </div>
+                            <div class="step-block">
+                                <span class="step-indicator">Step 7 of 6</span>
+                                <h3 class="step-title">Custom Kernel</h3>
+                                <p class="step-description"><strong>Note: </strong>not everyone requires Custom Kernel,
+                                    but often require by newer devices</p>
+                                <div class="command-block">
+                                    <div class="command-label">Run this command:</div>
+                                    <div class="command-code"> pacman -Sy linux-g14 linux-g14-headers
                                         <button class="copy-btn"
                                             onclick="copyCommand(this, ' pacman -Sy linux-g14 linux-g14-headers')">Copy</button>
                                     </div>
-                                    
-                                </div>
-                               
-                            <span class="reassurance">🛡️ Safe to run • Fully reversible</span>
-                        </div>
 
-                        <a href="https://asus-linux.org/guides/" class="help-link" target="_blank">
-                            ⚠️ Having trouble? Get step-by-step fixes →
-                        </a>
-                    </div>
-
-                    <div id="fedora" class="tab-content">
-                        <div class="steps-container">
-
-                            <div class="step-block">
-                                <span class="step-indicator">Step 1 of 5</span>
-                                <h3 class="step-title">Update Fedora</h3>
-                                <p class="step-description">Ensure your system is up-to-date before installing anything.
-                                </p>
-                                <div class="command-block">
-                                    <div class="command-label">Run this command:</div>
-                                    <div class="command-code">sudo dnf update -y</div>
-                                    <button class="copy-btn"
-                                        onclick="copyCommand(this, 'sudo dnf update -y')">Copy</button>
                                 </div>
-                                <div class="expected-output">
-                                    <div class="expected-label">Expected output</div>
-                                    <div class="expected-text">System packages updated successfully.</div>
-                                </div>
+
+                                <span class="reassurance">🛡️ Safe to run • Fully reversible</span>
                             </div>
 
-                            <div class="step-block">
-                                <span class="step-indicator">Step 2 of 5</span>
-                                <h3 class="step-title">Enable RPM Fusion (for NVIDIA users)</h3>
-                                <p class="step-description">Required for proprietary NVIDIA drivers.</p>
-                                <div class="command-block">
-                                    <div class="command-label">Run this command:</div>
-                                    <div class="command-code">
-                                        sudo dnf install
-                                        https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E
-                                        %fedora).noarch.rpm
-                                        https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E
-                                        %fedora).noarch.rpm
+                            <a href="https://asus-linux.org/guides/" class="help-link" target="_blank">
+                                ⚠️ Having trouble? Get step-by-step fixes →
+                            </a>
+                        </div>
+
+                        <div id="fedora" class="tab-content">
+                            <div class="steps-container">
+
+                                <div class="step-block">
+                                    <span class="step-indicator">Step 1 of 5</span>
+                                    <h3 class="step-title">Update Fedora</h3>
+                                    <p class="step-description">Ensure your system is up-to-date before installing
+                                        anything.
+                                    </p>
+                                    <div class="command-block">
+                                        <div class="command-label">Run this command:</div>
+                                        <div class="command-code">sudo dnf update -y</div>
+                                        <button class="copy-btn"
+                                            onclick="copyCommand(this, 'sudo dnf update -y')">Copy</button>
                                     </div>
-                                    <button class="copy-btn"
-                                        onclick="copyCommand(this, 'sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm')">Copy</button>
+                                    <div class="expected-output">
+                                        <div class="expected-label">Expected output</div>
+                                        <div class="expected-text">System packages updated successfully.</div>
+                                    </div>
                                 </div>
-                                <div class="expected-output">
-                                    <div class="expected-label">Expected output</div>
-                                    <div class="expected-text">RPM Fusion repositories enabled.</div>
+
+                                <div class="step-block">
+                                    <span class="step-indicator">Step 2 of 5</span>
+                                    <h3 class="step-title">Enable RPM Fusion (for NVIDIA users)</h3>
+                                    <p class="step-description">Required for proprietary NVIDIA drivers.</p>
+                                    <div class="command-block">
+                                        <div class="command-label">Run this command:</div>
+                                        <div class="command-code">
+                                            sudo dnf install
+                                            https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E
+                                            %fedora).noarch.rpm
+                                            https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm
+                                            -E
+                                            %fedora).noarch.rpm
+                                        </div>
+                                        <button class="copy-btn"
+                                            onclick="copyCommand(this, 'sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm')">Copy</button>
+                                    </div>
+                                    <div class="expected-output">
+                                        <div class="expected-label">Expected output</div>
+                                        <div class="expected-text">RPM Fusion repositories enabled.</div>
+                                    </div>
                                 </div>
+
+                                <div class="step-block">
+                                    <span class="step-indicator">Step 3 of 5</span>
+                                    <h3 class="step-title">Enable the COPR repository</h3>
+                                    <p class="step-description">Add the asus-linux repository to access ROG packages.
+                                    </p>
+                                    <div class="command-block">
+                                        <div class="command-label">Run this command:</div>
+                                        <div class="command-code">sudo dnf copr enable lukenukem/asus-linux</div>
+                                        <button class="copy-btn"
+                                            onclick="copyCommand(this, 'sudo dnf copr enable lukenukem/asus-linux')">Copy</button>
+                                    </div>
+                                    <div class="expected-output">
+                                        <div class="expected-label">Expected output</div>
+                                        <div class="expected-text">Repository enabled successfully.</div>
+                                    </div>
+                                </div>
+
+                                <div class="step-block">
+                                    <span class="step-indicator">Step 4 of 5</span>
+                                    <h3 class="step-title">Install ROG packages</h3>
+                                    <p class="step-description">Install asusctl and supergfxctl for hardware control.
+                                    </p>
+                                    <div class="command-block">
+                                        <div class="command-label">Run this command:</div>
+                                        <div class="command-code">sudo dnf install asusctl supergfxctl</div>
+                                        <button class="copy-btn"
+                                            onclick="copyCommand(this, 'sudo dnf install asusctl supergfxctl')">Copy</button>
+                                    </div>
+                                    <div class="expected-output">
+                                        <div class="expected-label">Expected output</div>
+                                        <div class="expected-text">Packages installed and services started.</div>
+                                    </div>
+                                </div>
+
+                                <div class="step-block">
+                                    <span class="step-indicator">Step 5 of 5</span>
+                                    <h3 class="step-title">Enable services</h3>
+                                    <p class="step-description">Start the background daemons for GPU switching and power
+                                        profiles.</p>
+                                    <div class="command-block">
+                                        <div class="command-label">Run this command:</div>
+                                        <div class="command-code">sudo systemctl enable --now supergfxd.service</div>
+                                        <button class="copy-btn"
+                                            onclick="copyCommand(this, 'sudo systemctl enable --now supergfxd.service')">Copy</button>
+                                    </div>
+                                    <span class="reassurance">🛡️ Safe to run • Fully reversible</span>
+                                </div>
+
                             </div>
 
-                            <div class="step-block">
-                                <span class="step-indicator">Step 3 of 5</span>
-                                <h3 class="step-title">Enable the COPR repository</h3>
-                                <p class="step-description">Add the asus-linux repository to access ROG packages.</p>
-                                <div class="command-block">
-                                    <div class="command-label">Run this command:</div>
-                                    <div class="command-code">sudo dnf copr enable lukenukem/asus-linux</div>
-                                    <button class="copy-btn"
-                                        onclick="copyCommand(this, 'sudo dnf copr enable lukenukem/asus-linux')">Copy</button>
-                                </div>
-                                <div class="expected-output">
-                                    <div class="expected-label">Expected output</div>
-                                    <div class="expected-text">Repository enabled successfully.</div>
-                                </div>
-                            </div>
-
-                            <div class="step-block">
-                                <span class="step-indicator">Step 4 of 5</span>
-                                <h3 class="step-title">Install ROG packages</h3>
-                                <p class="step-description">Install asusctl and supergfxctl for hardware control.</p>
-                                <div class="command-block">
-                                    <div class="command-label">Run this command:</div>
-                                    <div class="command-code">sudo dnf install asusctl supergfxctl</div>
-                                    <button class="copy-btn"
-                                        onclick="copyCommand(this, 'sudo dnf install asusctl supergfxctl')">Copy</button>
-                                </div>
-                                <div class="expected-output">
-                                    <div class="expected-label">Expected output</div>
-                                    <div class="expected-text">Packages installed and services started.</div>
-                                </div>
-                            </div>
-
-                            <div class="step-block">
-                                <span class="step-indicator">Step 5 of 5</span>
-                                <h3 class="step-title">Enable services</h3>
-                                <p class="step-description">Start the background daemons for GPU switching and power
-                                    profiles.</p>
-                                <div class="command-block">
-                                    <div class="command-label">Run this command:</div>
-                                    <div class="command-code">sudo systemctl enable --now supergfxd.service</div>
-                                    <button class="copy-btn"
-                                        onclick="copyCommand(this, 'sudo systemctl enable --now supergfxd.service')">Copy</button>
-                                </div>
-                                <span class="reassurance">🛡️ Safe to run • Fully reversible</span>
-                            </div>
-
+                            <a href="https://asus-linux.org/guides/fedora-guide/" class="help-link" target="_blank">
+                                📘 Full Fedora guide with advanced tweaks →
+                            </a>
                         </div>
 
-                        <a href="https://asus-linux.org/guides/fedora-guide/" class="help-link" target="_blank">
-                            📘 Full Fedora guide with advanced tweaks →
-                        </a>
-                    </div>
 
+                        <div id="opensuse" class="tab-content">
+                            <div class="steps-container">
+                                <div class="step-block">
+                                    <span class="step-indicator">Step 1 of 3</span>
+                                    <h3 class="step-title">Add the repository</h3>
+                                    <p class="step-description">Enable the asus-linux repository for openSUSE</p>
 
-                    <div id="opensuse" class="tab-content">
-                        <div class="steps-container">
-                            <div class="step-block">
-                                <span class="step-indicator">Step 1 of 3</span>
-                                <h3 class="step-title">Add the repository</h3>
-                                <p class="step-description">Enable the asus-linux repository for openSUSE</p>
+                                    <div class="command-block">
+                                        <div class="command-label">Run this command:</div>
+                                        <div class="command-code">sudo zypper ar
+                                            https://download.opensuse.org/repositories/home:/luke_nukem:/asus/openSUSE_Tumbleweed/
+                                            asus</div>
+                                        <button class="copy-btn"
+                                            onclick="copyCommand(this, 'sudo zypper ar https://download.opensuse.org/repositories/home:/luke_nukem:/asus/openSUSE_Tumbleweed/ asus')">Copy</button>
+                                    </div>
 
-                                <div class="command-block">
-                                    <div class="command-label">Run this command:</div>
-                                    <div class="command-code">sudo zypper ar
-                                        https://download.opensuse.org/repositories/home:/luke_nukem:/asus/openSUSE_Tumbleweed/
-                                        asus</div>
-                                    <button class="copy-btn"
-                                        onclick="copyCommand(this, 'sudo zypper ar https://download.opensuse.org/repositories/home:/luke_nukem:/asus/openSUSE_Tumbleweed/ asus')">Copy</button>
+                                    <div class="expected-output">
+                                        <div class="expected-label">Expected output</div>
+                                        <div class="expected-text">Repository added successfully.</div>
+                                    </div>
                                 </div>
 
-                                <div class="expected-output">
-                                    <div class="expected-label">Expected output</div>
-                                    <div class="expected-text">Repository added successfully.</div>
+                                <div class="step-block">
+                                    <span class="step-indicator">Step 2 of 3</span>
+                                    <h3 class="step-title">Install the package</h3>
+                                    <p class="step-description">Download and install asusctl</p>
+
+                                    <div class="command-block">
+                                        <div class="command-label">Run this command:</div>
+                                        <div class="command-code">sudo zypper install asusctl</div>
+                                        <button class="copy-btn"
+                                            onclick="copyCommand(this, 'sudo zypper install asusctl')">Copy</button>
+                                    </div>
+
+                                    <div class="expected-output">
+                                        <div class="expected-label">Expected output</div>
+                                        <div class="expected-text">Package installs and services start automatically.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-block">
+                                    <span class="step-indicator">Step 3 of 3</span>
+                                    <h3 class="step-title">Launch the app</h3>
+                                    <p class="step-description">Find ROG Control Center in your applications menu</p>
+
+                                    <span class="reassurance">🛡️ Safe to run • Fully reversible</span>
                                 </div>
                             </div>
 
-                            <div class="step-block">
-                                <span class="step-indicator">Step 2 of 3</span>
-                                <h3 class="step-title">Install the package</h3>
-                                <p class="step-description">Download and install asusctl</p>
-
-                                <div class="command-block">
-                                    <div class="command-label">Run this command:</div>
-                                    <div class="command-code">sudo zypper install asusctl</div>
-                                    <button class="copy-btn"
-                                        onclick="copyCommand(this, 'sudo zypper install asusctl')">Copy</button>
-                                </div>
-
-                                <div class="expected-output">
-                                    <div class="expected-label">Expected output</div>
-                                    <div class="expected-text">Package installs and services start automatically.</div>
-                                </div>
-                            </div>
-
-                            <div class="step-block">
-                                <span class="step-indicator">Step 3 of 3</span>
-                                <h3 class="step-title">Launch the app</h3>
-                                <p class="step-description">Find ROG Control Center in your applications menu</p>
-
-                                <span class="reassurance">🛡️ Safe to run • Fully reversible</span>
-                            </div>
+                            <a href="https://asus-linux.org/guides/" class="help-link" target="_blank">
+                                ⚠️ Having trouble? Get step-by-step fixes →
+                            </a>
                         </div>
-
-                        <a href="https://asus-linux.org/guides/" class="help-link" target="_blank">
-                            ⚠️ Having trouble? Get step-by-step fixes →
-                        </a>
                     </div>
                 </div>
-            </div>
         </section>
 
         <section class="whats-next">
@@ -473,7 +480,7 @@
             </div>
         </div>
     </footer>
-    <script src="../Script/install-script.js"></script>
+    <script src="../scripts/install-script.js"></script>
 </body>
 
 </html>
