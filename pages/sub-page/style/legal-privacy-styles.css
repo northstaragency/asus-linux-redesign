@@ -1,276 +1,155 @@
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* Import global styles */
+@import url("/styles//global.css");
 
-        :root {
-            --bg-primary: #0a0a0a;
-            --bg-secondary: #121212;
-            --bg-card: #1a1a1a;
-            --accent-red: #ff0050;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --border: #2a2a2a;
-        }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.8;
-            font-size: 18px;
-        }
+/* Legal/Privacy-specific styles */
 
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(10, 10, 10, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            border-bottom: 1px solid var(--border);
-        }
-         .ROG-logo{
-            height: auto;
-            max-height: 100px;
-        }
+body {
+    line-height: 1.8;
+    font-size: 18px;
+}
 
-        .nav-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            text-decoration: none;
-        }
+.page-header {
+    padding-top: 10rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
-        .logo-accent {
-            color: var(--text-secondary);
-        }
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
+.version-info {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
 
-        .nav-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s;
-            font-size: 0.95rem;
-        }
+.section {
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+}
 
-        .nav-links a:hover {
-            color: var(--text-primary);
-        }
+.section:last-of-type {
+    border-bottom: none;
+}
 
-        
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
 
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 2rem 4rem;
-        }
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
 
-        .page-header {
-            padding-top: 10rem;
-            text-align: center;
-            margin-bottom: 3rem;
-        }
+a:focus {
+    outline: 2px solid var(--accent-red);
+    outline-offset: 2px;
+}
 
-        h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            letter-spacing: -0.02em;
-        }
+abbr {
+    text-decoration: underline dotted;
+    cursor: help;
+    color: var(--text-primary);
+}
 
-        .version-info {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
+.definitions {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
 
-        .section {
-            margin-bottom: 4rem;
-            padding-bottom: 3rem;
-            border-bottom: 1px solid var(--border);
-        }
+.definitions h3 {
+    margin-top: 0;
+}
 
-        .section:last-of-type {
-            border-bottom: none;
-        }
+.definitions dl {
+    margin: 1rem 0;
+}
 
-        h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            margin-top: 2rem;
-        }
+.definitions dt {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: 1rem;
+}
 
-        h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            margin-top: 2rem;
-        }
+.definitions dd {
+    color: var(--text-secondary);
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
 
-        p {
-            margin-bottom: 1.5rem;
-            color: var(--text-secondary);
-        }
+.highlight-box {
+    background: var(--bg-card);
+    border-left: 4px solid var(--accent-red);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+}
 
-        strong {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
+.highlight-box p {
+    margin-bottom: 0;
+}
 
-        ul, ol {
-            margin: 1.5rem 0;
-            padding-left: 2rem;
-            color: var(--text-secondary);
-        }
+.contact-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
 
-        li {
-            margin-bottom: 0.75rem;
-        }
+.contact-box h3 {
+    margin-top: 0;
+}
 
-        a {
-            color: var(--accent-red);
-            text-decoration: none;
-        }
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+.footer-content p {
+    margin-bottom: 1rem;
+}
 
-        a:focus {
-            outline: 2px solid var(--accent-red);
-            outline-offset: 2px;
-        }
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
 
-        abbr {
-            text-decoration: underline dotted;
-            cursor: help;
-            color: var(--text-primary);
-        }
+    main {
+        padding: 0 1rem 2rem;
+    }
 
-        .definitions {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
+    h1 {
+        font-size: 2rem;
+    }
 
-        .definitions h3 {
-            margin-top: 0;
-        }
+    h2 {
+        font-size: 1.5rem;
+    }
 
-        .definitions dl {
-            margin: 1rem 0;
-        }
-
-        .definitions dt {
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-top: 1rem;
-        }
-
-        .definitions dd {
-            color: var(--text-secondary);
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .highlight-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--accent-red);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .highlight-box p {
-            margin-bottom: 0;
-        }
-
-        .contact-box {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-
-        .contact-box h3 {
-            margin-top: 0;
-        }
-
-        footer {
-            border-top: 1px solid var(--border);
-            padding: 3rem 2rem;
-            background: var(--bg-secondary);
-            margin-top: 4rem;
-        }
-
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            margin-top: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-links a:hover {
-            color: var(--accent-red);
-        }
-
-        @media (max-width: 768px) {
-            body {
-                font-size: 16px;
-            }
-
-            main {
-                padding: 0 1rem 2rem;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            h3 {
-                font-size: 1.25rem;
-            }
-
-           
-        }
+    h3 {
+        font-size: 1.25rem;
+    }
+}
